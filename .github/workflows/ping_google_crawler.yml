@@ -3,7 +3,8 @@ name: Google Crawler Bot
 on:
   schedule:
     - cron: '0 */2 * * *'
-
+  workflow_dispatch:  # This enables manual triggering
+  
 jobs:
   ping-google:
     runs-on: ubuntu-latest
